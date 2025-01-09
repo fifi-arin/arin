@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('download.jpeg');  
+            background-size: cover;
+            background-position: center; 
+            background-repeat: no-repeat;
+            flex-direction: column;
+        }
+        .moving-text {
+            font-size: 28px;
+            font-weight: bold;
+            font-weight: italic;
+            color: #84A9AC;
+            background-color: #F2F4F6;
+            padding: 10px 20px;
+            border-radius: 15px;
+            border-color: 10px solid #84A9AC ;
+            box-shadow: 0 8px 16px;
+            position: fixed;
+            top: 20px;
+            width: 100%;
+            text-align: center;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+        }
+
+        .moving-text span {
+            display: inline-block;
+            animation: move-text 10s linear infinite;
+        }
+
+        @keyframes move-text {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .login-container {
+            background-color: #F8FAFC;
+            border-color: 10px solid #EAAA00;
+            box-shadow: 0 8px 16px;
+            padding: 20px;
+            border-radius: 25px;
+            width: 350px;
+            text-align: center;
+            position: relative;
+            z-index: 0;
+        }
+
+         .circle-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 20px;
+            border: 3px solid #F8FAFC;
+        }
+        .circle-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .login-container h2 {
+            margin-top: 20px; 
+            margin-bottom: 8px;
+            color: #333;
+        } 
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+          .form-group-flex {
+            display: flex;
+            align-items: center;
+        } 
+          .form-group-flex img {
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+        }
+
+        .form-group-flex input {
+            width: 75%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .login-button {
+            width: 85%;
+            padding: 10px;
+            background-color: #257180;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .login-button:hover {
+            background-color: #A7D397;
+        }
+        .footer {
+            width: 100%;
+            text-align: center;
+            border-style: outset;
+            background-color: #F2F4F6;
+            color: #364E68;
+            font-size: 14px;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            left:0;
+            z-index: 100;
+}
+
+        .footer span {
+            color: #EAAA00;
+            font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="moving-text">
+        <span> ♫★⋆˚࿔ Welcome to My Website 𝜗𝜚˚⋆★࿔☾</span>
+    </div>
+<br>
+        <div class="circle-image">
+            <img src="me.jpg" alt="Header Image">
+        </div>
+
+    <br>
+    <div class="login-container">
+        <h2 style="color: #257180 ;">Login</h2>
+        <br>
+                
+                <div class="form-group">
+                <div class="form-group-flex">
+                <img src="icon people.jpeg" alt="Icon">
+                <input type="text" id="username" name="username" placeholder="Enter username" required>
+            </div>
+            <br>
+            
+            <a href="index.html">
+            <button type="submit" class="login-button">Login</button>
+        </a>
+        </form>
+    </div> 
+
+    <div class="footer">
+        © Copyright  <span>2024</span> . Nurin Afifah
+    </div>
+</body>
+</html>
